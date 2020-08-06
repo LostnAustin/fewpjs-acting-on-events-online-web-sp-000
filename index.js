@@ -12,10 +12,26 @@ function moveDodgerLeft() {
     }
 }
 
+function moveDodgerRight() {
+  let rightNumbers = dodger.style.right.replace('px', '');
+    let right = parseInt(leftNumbers, 10);
+    if (right < 100) {
+    dodger.style.right = `${right - 1}px`;
+    }
+}
+
 document.addEventListener('keydown',
 function(e) {
   if (e.key === 'ArrowLeft') {
     moveDodgerLeft();
+    }
+});
+
+
+document.addEventListener('keydown',
+function(e) {
+  if (e.key === 'ArrowRight') {
+    moveDodgerRight();
     }
 
 });
