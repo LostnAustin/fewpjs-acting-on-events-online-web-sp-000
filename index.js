@@ -34,3 +34,5 @@ function(e) {
 //   if (e.key === 'ArrowRight') {
 //     moveDodgerRight();
 //     }
+
+});
